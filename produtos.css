@@ -1,0 +1,184 @@
+@charset "UTF-8";
+
+* {
+    padding: 0px;
+    margin: 0px;
+}
+
+body {
+    font-family: 'Courier New', Courier, monospace;
+}
+
+header {
+    background-color: rgb(15, 188, 204);
+    padding: 20px;
+}
+
+h1 {
+    display: inline-block;
+    padding-left: 20px ;
+}
+
+p {
+    display: inline;
+}
+
+a {
+    text-decoration: none;
+    color: aliceblue;
+}
+
+a:hover {
+    color: rgb(10, 230, 255);
+}
+
+span {
+    color: rgb(229, 206, 27);
+}
+
+h1 > span {
+    position: relative;
+    text-align: center;
+}
+
+.valor {
+   font-size: 75px;
+   margin-top: 50px;
+}
+
+#quadrado {
+    position: relative;
+    display: inline-block;
+    margin: 20px;
+    background-color: rgba(222, 222, 222, 0.108);
+    width: 70%;
+    height: 500px;
+    left: 15%;
+}
+
+@media (max-width: 600px) {
+    #quadrado {
+        width: 400px;
+        left: 0%;
+    }
+    
+}
+
+#imagem {
+    position: relative;
+    background-color: rgb(220, 220, 220);
+    overflow: hidden;
+    width: 100%;
+    height: 500px;
+}
+
+#texto {
+    position: relative;
+    background-color: rgba(181, 181, 181, 0.364);
+    width: 100%;
+    height: 200px;
+    margin-bottom: 10px;
+    margin-top: 10px;
+}
+
+#texto2 {
+    position: relative;
+    background-color: rgba(181, 181, 181, 0.364);
+    width: 100%;
+    height: 150px;
+    margin-bottom: 10px;
+    margin-top: 10px;
+}
+
+.acessar {
+    position: relative;
+    display: inline-block;
+    font-size: 35px;
+    left: 30%;
+    bottom: 20px;
+    padding: 10px;
+    margin: 20px;
+    background-color: rgb(15, 188, 204);
+}
+
+p {
+    position: relative;
+    text-align: center;
+}
+
+#img1 {
+    background-color: aqua;
+   
+}
+
+#img2 {
+    background-color: rgb(0, 255, 136);
+    
+}
+
+#img3 {
+    background-color: rgb(255, 191, 0);
+    
+}
+
+#img4 {
+    background-color: rgb(255, 0, 212);
+    
+}
+
+#img5 {
+    background-color: rgb(255, 0, 0);
+    
+}
+
+.bar {
+    position: relative;
+    display: inline-block;
+    margin: 10px;
+    margin-left: 7%;
+    width: 15px;
+    height: 15px;
+    left: 15%;
+    border: 2px solid rgb(174, 174, 171);
+    cursor: pointer;
+}
+
+.bar:hover {
+    background-color: aqua;
+    border: 2px solid rgb(100, 189, 237);
+}
+
+.slides {
+    display: flex;
+    width: 500%;
+    height: 100%;
+}
+
+.slide {
+    width: 20%;
+    transition: .6s;
+}
+
+input{
+    display: none;
+}
+
+#slide1:checked ~ .s1 {
+    margin-left: 0;
+}
+
+#slide2:checked ~ .s1 {
+    margin-left: -20%;
+}
+
+#slide3:checked ~ .s1 {
+    margin-left: -40%;
+}
+
+#slide4:checked ~ .s1 {
+    margin-left: -60%;
+}
+
+#slide5:checked ~ .s1 {
+    margin-left: -80%;
+}
