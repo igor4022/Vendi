@@ -167,6 +167,12 @@ span {
     border-radius: 5px;
 }
 
+@media (max-width: 600px) {
+    #pesquisa {
+        width: 270px;
+    }
+}
+
 #quadrado {
     
     display: inline-block;

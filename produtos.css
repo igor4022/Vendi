@@ -58,10 +58,9 @@ h1 > span {
 
 @media (max-width: 600px) {
     #quadrado {
-        width: 400px;
+        width: 380px;
         left: 0%;
     }
-    
 }
 
 #imagem {
