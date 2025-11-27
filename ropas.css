@@ -176,6 +176,13 @@ span {
     height: 335px;
 }
 
+@media (max-width: 600px) {
+    #quadrado {
+        width: 380px;
+        left: 0%;
+    }
+}
+
 #imagem {
     
     background-color: rgb(220, 220, 220);
