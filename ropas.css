@@ -10,7 +10,7 @@ body {
 }
 
 header {
-    background-color: rgb(15, 188, 204);
+    background-color: rgb(126, 198, 81);
     padding: 20px;
 }
 
@@ -151,7 +151,7 @@ a {
 }
 
 a:hover {
-    color: rgb(10, 230, 255);   
+    color: rgb(143, 246, 80);   
 }
 
 span {
@@ -189,7 +189,7 @@ span {
     font-size: 35px;
     padding: 10px;
     margin: 5px;
-    background-color: rgb(15, 188, 204);
+    background-color: rgb(126, 198, 81);
 }
 
 p {
