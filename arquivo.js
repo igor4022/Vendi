@@ -13,3 +13,10 @@ function pesquisar(){
         }
     }
 }
+
+// Parte que ativar a aria de navagar ns listas...
+
+const navegar = document.querySelector(".navegar")
+const nav = document.querySelector(".nav")
+
+navegar.addEventListener("click", () => nav.classList.toggle("ativar"))

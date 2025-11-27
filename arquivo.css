@@ -14,6 +14,60 @@ header {
     padding: 20px;
 }
 
+.navegar {
+    display: block;
+    position: relative;
+    z-index: 1;
+    left: 90%;
+    bottom: 20px;
+    padding-bottom: 20px;
+    cursor: pointer;
+    border: none;
+    background: none;
+    border-top: 3px solid white;
+}
+
+.navegar::before, .navegar::after {
+    content: "";
+    display: block;
+    width: 50px;
+    height: 5px;
+    background-color: aliceblue;
+    margin-top: 5px;
+}
+
+.lista-navegar {
+    position: absolute;
+    display: inline-block;
+    padding: 20px;
+    top: 0px;
+    margin: -20px;
+    left: 0px;
+    width: 200px;
+    height: 50vh;
+    background-color: rgb(229, 206, 27);;
+    clip-path: circle(100px at 90% -30%);
+    transition: 1s ease-out;
+    flex-direction: column;
+    justify-content: space-around;
+    align-items: center;
+    gap: 0;
+    pointer-events: none;
+}
+
+@media (max-width: 600px) {
+    .lista-navegar {
+        left: 53%;
+    }
+    
+}
+
+.nav.ativar .lista-navegar {
+    position: relative;
+    clip-path: circle(1500px at 90% -15%);
+    pointer-events: all;
+}
+
 h1{
     display: inline-block;
     padding-left: 20px ;
@@ -35,7 +89,7 @@ a {
 }
 
 a:hover {
-    color: rgb(10, 230, 255);
+    color: rgb(10, 230, 255);   
 }
 
 span {
@@ -62,7 +116,6 @@ span {
 
 #imagem {
     position: relative;
-   
     background-color: rgb(220, 220, 220);
     width: 200px;
     height: 200px;
