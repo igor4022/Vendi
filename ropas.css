@@ -167,6 +167,12 @@ span {
     border-radius: 5px;
 }
 
+@media (max-width: 600px) {
+    #pesquisa {
+        width: 270px;
+    }
+}
+
 #quadrado {
     
     display: inline-block;
@@ -174,13 +180,6 @@ span {
     background-color: rgba(222, 222, 222, 0.108);
     width: 200px;
     height: 335px;
-}
-
-@media (max-width: 600px) {
-    #quadrado {
-        width: 380px;
-        left: 0%;
-    }
 }
 
 #imagem {
